@@ -1,11 +1,18 @@
 <div class="first-layout">
-  <div class="header">
+  <div class="header" [ngClass]="layoutAtual">
     <div class="logo">
       <img src="assets/images/logo.svg" alt="logo" />
     </div>
     <div class="buttons">
-      <div class="button-header assinatura">Assinatura</div>
-      <div class="button-header como-e-feito">Como é feito?</div>
+      <div class="button-header">Como é feito?</div>
+      <div class="button-header">Cupons</div>
+      <div class="button-header">Sobre</div>
+      <div class="button-enter">Entrar
+        <div class="icon-arrow">
+          <img class="right-arrow" src="assets/images/enter-arrow.svg" alt="arrow-right" />
+        </div>
+      </div>
+
     </div>
   </div>
   <div class="content">
@@ -16,14 +23,16 @@
         <div class="title pet">pet</div>
       </div>
       <div class="button">
-        <p>EU QUERO</p>
+        <p>EU QUERO!</p>
+        <div class="arrow">
+        </div>
       </div>
     </div>
     <div class="right-side">
       <div class="circle">
       </div>
       <div class="product-image">
-        <img src="assets/images/product.png" alt="product" class="product" />
+        <img src="assets/images/product-2.png" alt="product" class="product" />
       </div>
       <div class="shadow"></div>
     </div>

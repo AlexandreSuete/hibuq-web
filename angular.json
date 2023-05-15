@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hibuq"
+    }
+  },
+  "defaultProject": "hibuq",
+  "cli": {
+    "analytics": "c33263ba-0771-4807-a7fd-0f08837847ce"
+  }
 }
