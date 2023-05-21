@@ -75,8 +75,8 @@
       .message {
         margin-top: 100px;
         .title {
-          max-height: 140px;
-          font-size: 140px;
+          max-height: 6.0vw;
+          font-size: 7.3vw;
           text-transform: uppercase;
           color: #2c2733;
         }
@@ -93,6 +93,10 @@
         justify-content: center;
         align-items: center;
         gap: 27px;
+        &:hover {
+          cursor: pointer;
+          background-color: #F5FFBC;
+        }
       }
     }
     .right-side {
@@ -101,8 +105,8 @@
       right: 5%;
       .circle {
         margin-top: 20px;
-        width: 800px;
-        height: 800px;
+        width: 39.6vw;
+        height: 39.6vw;
         border-radius: 50%;
         background-color: #faff7c;
         animation: bounce2 3s ease-in-out infinite;
@@ -136,7 +140,7 @@
           left: 50%;
           transform: translate(-50%, -50%);
           .product {
-            max-height: 800px;
+            max-height: 39.6vw;
             width: auto;
             height: auto;
             margin-left: auto;
@@ -158,9 +162,9 @@
       }
       .shadow {
         position: absolute;
-        top: 100%;
+        top: 108%;
         background: transparent linear-gradient(90deg, #1212120D 0%, #000000 100%) 0% 0% no-repeat padding-box;
-        width: 410px;
+        width: 22vw;
         height: 40px;
         border-radius: 50%;
         filter: blur(8px);
@@ -180,6 +184,10 @@
     padding-top: 70px;
     font-size: 54px;
     text-transform: uppercase;
+    div {
+      color: #2C2733;
+      height: 54px;
+    }
   }
   .tutorial-cards {
     .cards {
@@ -278,25 +286,25 @@
   height: fit-content;
 
   .first-session {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     background-color: #BFE9FF;
     position: relative;
     .left-side {
       .message {
         position: absolute;
-        top: 10%;
+        top: 15%;
         left: 15%;
         z-index: 1;
         .title {
-          font-size: 68px;
+          font-size: 54px;
           p {
-            height: 70px;
+            height: 54px;
           }
         }
         .description {
           margin-top: 30px;
-          font-size: 20px;
+          font-size: 16px;
         }
         .button {
           display: flex;
@@ -305,6 +313,11 @@
           align-items: center;
           margin-top: 20px;
           font-weight: 600;
+          color: #2C2733;
+          &:hover {
+            cursor: pointer;
+            color: #FFA76C;
+          }
         }
       }
     }
@@ -316,7 +329,7 @@
         border-radius: 50%;
         position: absolute;
         left: 70%;
-        top: 40%;
+        top: 50%;
         transform: translate(-50%, -50%);
         .embalagem-grande {
           position: absolute;
@@ -365,10 +378,13 @@
             .title {
               color: #faff7c;
               text-transform: uppercase;
-              font-size: 24px;
+              font-size: 20px;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 600;
             }
             .star {
               margin-right: 10px;
+              margin-top: 5px;
             }
           }
         }
@@ -473,9 +489,14 @@
       }
       .description {
         margin-top: 30px;
-        font-size: 20px;
+        p {
+
+          font-size: 16px;
+        }
       }
       .description-2 {
+        margin-top: 30px;
+        font-size: 16px;
 
       }
       .button {
@@ -485,6 +506,11 @@
         align-items: center;
         margin-top: 20px;
         font-weight: 600;
+        color: #2C2733;
+        &:hover {
+          cursor: pointer;
+          color: #FFA76C;
+        }
       }
     }
   }
@@ -539,17 +565,17 @@
     align-items: center;
     .message {
       .title {
-        font-size: 60px;
+        font-size: 54px;
         width: 520px;
         font-family: 'Owners';
-        font-weight: 700;
+        font-weight: 900;
         p {
-          height: 62px;
+          height: 54px;
         }
       }
       .description {
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 16px;
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
       }
@@ -557,6 +583,7 @@
   }
   .dog-image {
     position: absolute;
+    width: 100vw;
     top: 516vh;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -573,12 +600,12 @@
       justify-content: center;
       align-items: center;
       .message {
-          font-size: 75px;
+          font-size: 54px;
           width: 520px;
           font-family: 'Owners';
-          font-weight: 700;
+          font-weight: 900;
           p {
-            height: 77px;
+            height: 54px;
           }
       }
     }
@@ -597,6 +624,12 @@
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
             font-weight: 300;
+            color: #4B1B28;
+            opacity: 0.5;
+          }
+          &:focus {
+            border: 1px solid #FFCCDA;
+            outline: none;
           }
         }
       }
@@ -612,8 +645,12 @@
         align-items: center;
         color: #A5F89A;
         gap: 20px;
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 20px;
+        &:hover {
+          cursor: pointer;
+          background-color: #B1A5FF;
+        }
       }
     }
   }
@@ -720,7 +757,7 @@
           .card-description {
             font-size: 16px;
           }
-          &:hover {
+          :hover {
             transform: scale(1);
             box-shadow: none;
           }
@@ -929,7 +966,7 @@
   .fifithy-layout {
     height: fit-content;
     .first-session {
-      height: 800px;
+      height: 850px;
       position: relative;
       .left-side {
         position: absolute;
@@ -945,7 +982,7 @@
             font-family: "Owners", sans-serif;
             font-weight: 900;
             p {
-              min-height: 36px;
+              max-height: 36px;
               height: unset
             };
           }
@@ -960,6 +997,16 @@
           }
         }
       }
+      .right-side {
+        .calendar {
+          .calendar-img {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .dog-image {
+      top: 830px;
     }
     .second-session {
       height: 800px;
@@ -969,12 +1016,12 @@
         justify-content: unset;
         text-align: center;
         .message {
-          margin-top: 100px;
+          margin-top: 150px;
           p {
-            font-size: 36px;
+            font-size: 32px;
             font-family: "Owners", sans-serif;
             font-weight: 900;
-            min-height: 36px;
+            max-height: 32px;
             height: unset;
           }
         }
@@ -989,7 +1036,7 @@
           align-items: center;
           .input {
             input {
-              width: 345px;
+              width: 320px;
             }
           }
         }

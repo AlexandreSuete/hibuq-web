@@ -263,11 +263,11 @@
           <p>Se seu cachorro come rações tradicionais, você precisa fazer a troca da alimentação industrial para a natural aos poucos. Esse kit de boas-vindas te ajuda nessa transição.</p>
         </div>
         <div class="description-2">
-          <p>Gratuito para quem se inscreve no pré</p>
+          <p>Gratuito para quem se inscrever no pré</p>
           <p>lançamento</p>
         </div>
         <div class="button">
-          Eu quero
+          Me inscrever
           <div class="icon-arrow">
             <img class="right-arrow" src="assets/images/black-arrow.svg" alt="arrow-right" />
           </div>
@@ -312,6 +312,9 @@
           <img src="assets/images/calendario.svg" alt="calendar" class="calendar-img" />
         </div>
       </div>
+      <div class="dog-image">
+        <img *ngIf="isMobile" src="assets/images/dog-mobile.svg" alt="dog-image" class="dog-img" />
+      </div>
     </div>
     <div *ngIf="!isMobile" class="dog-image">
       <img  src="assets/images/dog.svg" alt="dog-image" class="dog-img" />
@@ -326,10 +329,10 @@
           <p>DE COMIDA</p>
         </div>
         <div *ngIf="isMobile" class="message">
-          <p>TROQUE A RAÇÃO</p>
-          <p>PELO AMOR EM</p>
-          <p>FORMA DE</p>
-          <p>COMIDA</p>
+          <p>TROQUE A</p>
+          <p>RAÇÃO PELO</p>
+          <p>AMOR EM FORMA </p>
+          <p>DE COMIDA</p>
         </div>
       </div>
       <div class="right-side">
@@ -344,7 +347,7 @@
             <input type="email" placeholder="Email" />
           </div>
           <div class="button">
-            Eu Quero
+            Me inscrever
             <div class="icon-arrow">
               <img class="right-arrow" src="assets/images/green-arrow.svg" alt="arrow-right" />
             </div>
