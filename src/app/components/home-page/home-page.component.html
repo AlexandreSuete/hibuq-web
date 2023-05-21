@@ -23,7 +23,7 @@
           <div class="title pet">pet</div>
         </div>
         <div class="button">
-          <p class="title">Eu Quero</p>
+          <p>Eu quero</p>
           <div class="arrow">
             <img class="right-arrow" src="assets/images/black-arrow.svg" alt="arrow-right" />
           </div>
@@ -39,10 +39,15 @@
       </div>
     </div>
   </div>
-  <div class="second-layout">
-    <div class="second-layout-title">
+  <div  class="second-layout">
+    <div *ngIf="!isMobile" class="second-layout-title">
       <div class="first-title title">passo a passo da</div>
       <div class="second-title title">compra da comida</div>
+    </div>
+    <div *ngIf="isMobile" class="second-layout-title">
+      <p>passo a passo</p>
+      <p>da compra</p>
+      <p>da comida</p>
     </div>
     <div class="tutorial-cards">
       <div class="cards">
@@ -106,6 +111,7 @@
             <div>ou semestral</div>
           </div>
         </div>
+        <div class="spacing"></div>
       </div>
       <div class="line">
         <div class="dotted-line">
@@ -131,15 +137,18 @@
             <p>PARA SEU</p>
             <p>CACHORRO</p>
           </div>
-          <div class="description">
+          <div class="description" *ngIf="!isMobile">
             <p>Cada cachorro tem seu estilo de vida</p>
             <p>e suas necessidades, geramos</p>
             <p>receitas customizadas para atender</p>
             <p>seu pet, assim ele terá uma vida mais</p>
             <p>saudável</p>
           </div>
+          <div *ngIf="isMobile" class="description-mobile">
+            <p>Cada cachorro tem seu estilo de vida e suas necessidades, geramos receitas customizadas para atender seu pet, assim ele terá uma vida mais saudável.</p>
+          </div>
           <div class="button">
-            Eu Quero
+            Eu quero
             <div class="icon-arrow">
               <img class="right-arrow" src="assets/images/black-arrow.svg" alt="arrow-right" />
             </div>
@@ -178,17 +187,12 @@
           </div>
         </div>
         <div class="package monthly">
-          <div class="best-seller">
+          <div class="best-seller" >
             <div class="star">
               <img src="assets/images/star.svg" alt="star" />
             </div>
             <div class="title">
               mais escolhido
-            </div>
-          </div>
-          <div class="new">
-            <div class="title">
-              novo
             </div>
           </div>
           <div class="body monthly">
@@ -249,18 +253,21 @@
           <p>SEU PET AOS</p>
           <p>POUCOS</p>
         </div>
-        <div class="description">
+        <div *ngIf="!isMobile" class="description">
           <p>Se seu cachorro come rações tradicionas, você</p>
           <p>precisa fazer a troca da alimentação industrial</p>
           <p>para a natural aos poucos. Esse kit de boas-</p>
           <p>vindas te ajuda nessa transição.</p>
+        </div>
+        <div *ngIf="isMobile" class="description">
+          <p>Se seu cachorro come rações tradicionais, você precisa fazer a troca da alimentação industrial para a natural aos poucos. Esse kit de boas-vindas te ajuda nessa transição.</p>
         </div>
         <div class="description-2">
           <p>Gratuito para quem se inscreve no pré</p>
           <p>lançamento</p>
         </div>
         <div class="button">
-          Eu Quero
+          Eu quero
           <div class="icon-arrow">
             <img class="right-arrow" src="assets/images/black-arrow.svg" alt="arrow-right" />
           </div>
@@ -273,11 +280,98 @@
           <img src="assets/images/tres-embalagens.png" alt="tres-embalagens" class="tres-embalagens-img" />
         </div>
         <div class="discount">
-          <p class="old-price">R$ 24,90</p>
+          <p class="old-price">R$ 45,90</p>
           <p class="price">R$ 00,00</p>
           <p class="pre-lancamento">pré lançamento</p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="fifithy-layout">
+    <div class="first-session">
+      <div class="left-side">
+        <div class="message">
+          <div class="title">
+            <p>AGENDE O</p>
+            <p>MELHOR DIA</p>
+            <p>PARA AS</p>
+            <p>ENTREGAS</p>
+          </div>
+          <div *ngIf="!isMobile" class="description">
+            <p>Você escolhe o dia que fica melhor para as</p>
+            <p>entragas, lembrando que elas acontecem</p>
+            <p>semanalmente para não lotar seu freezer.</p>
+          </div>
+          <div *ngIf="isMobile" class="description">
+            Você escolhe o dia que fica melhor para as entregas, lembrando que elas acontecem semanalmente para não lotar seu freezer.
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="calendar">
+          <img src="assets/images/calendario.svg" alt="calendar" class="calendar-img" />
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!isMobile" class="dog-image">
+      <img  src="assets/images/dog.svg" alt="dog-image" class="dog-img" />
+    </div>
+    <div class="second-session">
+      <div class="left-side">
+        <div *ngIf="!isMobile" class="message">
+          <p>TROQUE</p>
+          <p>A RAÇÃO</p>
+          <p>PELO AMOR</p>
+          <p>EM FORMA</p>
+          <p>DE COMIDA</p>
+        </div>
+        <div *ngIf="isMobile" class="message">
+          <p>TROQUE A RAÇÃO</p>
+          <p>PELO AMOR EM</p>
+          <p>FORMA DE</p>
+          <p>COMIDA</p>
+        </div>
+      </div>
+      <div class="right-side">
+        <form>
+          <div class="input nome">
+            <input type="text" placeholder="Nome" />
+          </div>
+          <div class="input celular">
+            <input type="cel" placeholder="Celular" />
+          </div>
+          <div class="input email">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="button">
+            Eu Quero
+            <div class="icon-arrow">
+              <img class="right-arrow" src="assets/images/green-arrow.svg" alt="arrow-right" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  <div class="footer">
+    <div class="logo">
+      <img src="assets/images/green-logo.svg" alt="logo" class="logo-img" />
+    </div>
+    <div class="social-media">
+      <div class="facebook">
+        <img src="assets/images/facebook.svg" alt="facebook" class="facebook-img" />
+      </div>
+      <div class="instagram">
+        <img src="assets/images/instagram.svg" alt="instagram" class="instagram-img" />
+      </div>
+      <div class="tiktok">
+        <img src="assets/images/tiktok.svg" alt="tiktok" class="tiktok-img" />
+      </div>
+      <div class="youtube">
+        <img src="assets/images/youtube.svg" alt="youtube" class="youtube-img" />
+      </div>
+      <div class="twitter">
+        <img src="assets/images/twitter.svg" alt="twitter" class="twitter-img" />
+      </div>
   </div>
 </div>
